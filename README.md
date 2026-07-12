@@ -1,4 +1,8 @@
 Full-Stack AI Habit Tracker App using the MERN (MongoDB, Express, React, Node.js) stack, styled with Tailwind CSS v4 (glassmorphism + light/dark mode), and powered by Google Gemini AI. Track daily habits, watch your streaks grow on a GitHub-style 90-day heatmap, and let AI turn your data into real personalised insights weekly reports, habit suggestions, streak recovery plans, and natural-language analysis all in one polished app.
+<p align="center">
+<video src="https://github.com/user-attachments/assets/de70ff24-74fa-464e-bb86-511edb88b852"></video>
+</p>
+
 
 Functionalities Implemented:
 
@@ -47,15 +51,3 @@ Light & Dark Mode
 Responsive Design 
 –> Mobile-friendly with bottom tab bar and adaptive layouts
 
-Backend Development
--> Backend Setup & Project Structure 
--> Connecting to MongoDB Atlas & Environment Variables 
--> Building Authentication APIs (Register, Login, Get Me, Update Profile) 
--> Building Habit Management APIs (CRUD, Archive, Reorder) 
--> Building Habit Log APIs & Date Helpers (Mark, Unmark, Today, Range, Heatmap, Stats, Streak Math) 
--> Building AI APIs with Google Gemini (Weekly Report, Habit Suggestions, Streak Recovery, Habit Chat, Morning Motivation)
-
-Fontend Integration 
--> Replacing Mock API with Real Axios Client 
--> End-to-End Testing All Features 
--> Building the Seed Script for Demo Data
