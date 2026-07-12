@@ -13,10 +13,10 @@ const allowedOrigins = [
     "http://localhost:5173",
   "http://localhost:8000",
   "https://ai-habit-tracker-wine.vercel.app",
-    (process.env.CLIENT_URL || "")
+    ...((process.env.CLIENT_URL || "")
 .split(",")
 .map((s) => s.trim())
-.filter(Boolean)
+.filter(Boolean))
 ];
 
 
@@ -24,10 +24,12 @@ const corsOptions = {
     origin(origin, cb) {
         if(!origin) return cb(null, true);
 
-        if(/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)){
+        const cleanOrigin = origin.replace(/\/$/, "");
+
+        if(/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(cleanOrigin)){
             return cb(null, true);
         }
-        if(allowedOrigins.includes(origin)) return cb(null, true);
+        if(allowedOrigins.includes(cleanOrigin)) return cb(null, true);
         return cb(new Error(`Origin ${origin} not allowed by CORS`));
 
     },
