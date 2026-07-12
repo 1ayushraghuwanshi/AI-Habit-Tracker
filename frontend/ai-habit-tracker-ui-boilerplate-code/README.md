@@ -1,16 +1,33 @@
-# React + Vite
+ Full-Stack AI Habit Tracker App using the MERN (MongoDB, Express, React, Node.js) stack, styled with Tailwind CSS v4 (glassmorphism + light/dark mode), and powered by Google Gemini AI. Track daily habits, watch your streaks grow on a GitHub-style 90-day heatmap, and let AI turn your data into real personalised insights weekly reports, habit suggestions, streak recovery plans, and natural-language analysis all in one polished app.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ Functionalities Implemented:
 
-Currently, two official plugins are available:
+1. User Authentication – Secure login & signup with JWT and bcrypt password hashing
+2. Habit Management – Create, edit, archive, delete habits with categories, frequency, target days, icons, and colors
+3. Daily Habit Tracking – One-click check-offs with satisfying confetti animations and progress rings
+4. Streak Tracking – Current streaks, longest streaks, and active streak counters
+5. 90-Day Heatmap – GitHub-style consistency visualization with theme-aware amber gradients
+6. AI Weekly Report – Personalised review of the past 7 days powered by Google Gemini
+7. AI Habit Suggestions – 3-step wizard that recommends habits based on user goals, productive time, and past struggles
+8. AI Streak Recovery Coach – Auto-detects broken streaks of 7+ days and generates a personalised 3-day comeback plan
+9. AI Habit Analysis Chat – Natural language Q&A about habit data with real numbers and patterns
+10. AI Morning Motivation – Daily personalised wake-up messages mentioning actual habit names and streaks
+11. Weekly Grid View – Full 7-day habit grid with week navigation and stats
+12. Insights Dashboard – AI report, week-over-week comparison, category donut, per-habit performance bars
+13. Statistics Page – Best/longest streaks, monthly bar charts, top performers, and floating AI chat
+14. Light & Dark Mode – Glassmorphism UI with aurora background and theme persistence
+15. Responsive Design – Mobile-friendly with bottom tab bar and adaptive layouts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+Backend Development
+-> Backend Setup & Project Structure
+-> Connecting to MongoDB Atlas & Environment Variables
+-> Building Authentication APIs (Register, Login, Get Me, Update Profile)
+-> Building Habit Management APIs (CRUD, Archive, Reorder)
+-> Building Habit Log APIs & Date Helpers (Mark, Unmark, Today, Range, Heatmap, Stats, Streak Math)
+-> Building AI APIs with Google Gemini (Weekly Report, Habit Suggestions, Streak Recovery, Habit Chat, Morning Motivation)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Fontend Integration
+-> Replacing Mock API with Real Axios Client
+-> End-to-End Testing All Features
+-> Building the Seed Script for Demo Data
