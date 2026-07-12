@@ -9,10 +9,15 @@ import logRoutes from "./routes/logs.js";
 import aiRoutes from "./routes/ai.js";
 const app = express();
 
-const allowedOrigins = (process.env.CLIENT_URL || "https://ai-habit-tracker-wine.vercel.app")
+const allowedOrigins = [
+    "http://localhost:5173",
+  "http://localhost:8000",
+  "https://ai-habit-tracker-wine.vercel.app",
+    (process.env.CLIENT_URL || "")
 .split(",")
 .map((s) => s.trim())
-.filter(Boolean);
+.filter(Boolean)
+];
 
 
 const corsOptions = {
